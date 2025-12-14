@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Вызов электрика и сантехника в Астане — дёшево, быстро, аккуратно</title>
+<meta name="description" content="Вызов электрика и сантехника в Астане. Опыт более 5 лет. Быстро, аккуратно, честные цены. Работы любой сложности.">
+<meta name="keywords" content="электрик астана, сантехник астана, вызов электрика, сантехник недорого">
+<meta name="robots" content="index, follow">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;text-align:center}
+
+/* ===== HEADER ===== */
+.header{
+min-height:100vh;
+background:url("https://i.pinimg.com/1200x/58/f8/7e/58f87eab496d090207e392f40b32ee69.jpg") center/cover no-repeat;
+display:flex;align-items:center;justify-content:center
+}
+.header-overlay{
+background:rgba(0,0,0,.65);
+color:#fff;
+padding:60px 40px;
+border-radius:28px;
+max-width:900px;
+width:90%
+}
+
+/* ЛОГОТИП */
+@keyframes breath {
+0%{transform:scale(1)}
+50%{transform:scale(0.9)}
+100%{transform:scale(1)}
+}
+.logo{
+width:170px;
+margin-bottom:20px;
+animation:breath 3s ease-in-out infinite;
+transition:.4s;
+cursor:pointer
+}
+.logo:hover{transform:scale(1.15)}
+
+h1{font-size:52px;font-weight:900}
+.subtitle{font-size:26px;font-weight:700;margin:20px 0 30px}
+
+.btns a{
+display:inline-block;
+margin:10px;
+padding:20px 38px;
+font-size:22px;
+font-weight:900;
+color:#fff;
+background:#22c55e;
+border-radius:18px;
+text-decoration:none;
+transition:.25s
+}
+.btns a:hover{transform:scale(1.15)}
+
+/* ===== SECTION ===== */
+.section{max-width:1100px;margin:auto;padding:90px 20px}
+h2{font-size:44px;font-weight:900;margin-bottom:60px}
+
+/* ===== SERVICES ===== */
+.service-row{
+display:flex;
+align-items:center;
+gap:80px;
+margin-bottom:140px;
+text-align:left
+}
+.service-row img{
+width:420px;
+border-radius:28px
+}
+.service-text h3{font-size:48px;font-weight:900}
+.service-text ul{font-size:24px;font-weight:700;line-height:1.6}
+
+/* ===== BOX ===== */
+.box{
+background:#fff;
+border:3px solid #22c55e;
+border-radius:28px;
+padding:40px;
+font-size:22px;
+font-weight:800;
+margin-bottom:40px
+}
+
+/* ASTANA ICON */
+.astana-icon{width:70px;margin-bottom:15px}
+
+/* ===== REVIEWS ===== */
+.review{
+background:#fff;
+padding:30px;
+border-radius:22px;
+margin-bottom:25px;
+border-left:8px solid #22c55e;
+font-size:20px;
+text-align:left
+}
+
+/* ===== FORM ===== */
+form{
+background:#fff;
+padding:40px;
+border-radius:28px;
+max-width:600px;
+margin:auto;
+border:3px solid #22c55e
+}
+input,textarea{
+width:100%;
+padding:18px;
+margin-bottom:15px;
+font-size:20px;
+border-radius:14px;
+border:2px solid #cbd5e1
+}
+button{
+width:100%;
+padding:20px;
+font-size:24px;
+font-weight:900;
+background:#22c55e;
+color:#fff;
+border:none;
+border-radius:18px;
+cursor:pointer;
+transition:.25s
+}
+button:hover{transform:scale(1.1)}
+
+/* ===== FOOTER ===== */
+.footer{background:#111827;color:#fff;padding:40px;font-size:18px}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+.service-row{flex-direction:column;text-align:center;gap:40px}
+.service-row img{width:100%;max-width:360px}
+h1{font-size:34px}
+.subtitle{font-size:20px}
+}
+</style>
+
+<script>
+function sendWhatsApp(e){
+e.preventDefault();
+window.open(
+`https://wa.me/77761166840?text=Заявка:%0AИмя:${name.value}%0AТелефон:${phone.value}%0AПроблема:${task.value}`,
+'_blank'
+);
+}
+
+/* ОТЗЫВЫ */
+function addReview(){
+if(!rauthor.value||!rtext.value)return;
+const r=JSON.parse(localStorage.getItem('reviews')||'[]');
+r.push({a:rauthor.value,t:rtext.value});
+localStorage.setItem('reviews',JSON.stringify(r));
+rauthor.value='';rtext.value='';
+renderReviews();
+}
+function renderReviews(){
+const box=document.getElementById('reviewsBox');
+box.innerHTML='';
+const base=[
+{a:"Алексей, Астана",t:"Приехал быстро, сделал всё аккуратно. Цена честная."},
+{a:"Марина, Астана",t:"Меняли смеситель, всё чисто и без спешки."},
+{a:"Руслан, Астана",t:"Работы выполнены качественно. Рекомендую."}
+];
+const saved=JSON.parse(localStorage.getItem('reviews')||'[]');
+[...base,...saved].forEach(r=>{
+box.innerHTML+=`<div class="review">⭐️⭐️⭐️⭐️⭐️<br><b>${r.a}</b><br>${r.t}</div>`;
+});
+}
+window.onload=renderReviews;
+</script>
+</head>
+
+<body>
+
+<header class="header">
+<div class="header-overlay">
+<img src="https://tmsearch.onlinepatent.ru/images/701/701f0f07-3739-4868-90ce-611f00a9c5e7.jpg" class="logo" alt="Логотип">
+<h1>Вызов электрика и сантехника</h1>
+<div class="subtitle">Дёшево • Быстро • Аккуратно<br>Работы любой сложности</div>
+<div class="btns">
+<a href="#contact">Оставить заявку</a>
+<a href="https://wa.me/77761166840" target="_blank">WhatsApp</a>
+</div>
+</div>
+</header>
+
+<section class="section">
+<h2>Наши услуги</h2>
+
+<div class="service-row">
+<img src="https://zeitarbeit-international.de/wp-content/uploads/elementor/thumbs/iStock-1049769264-pxugb8i6q9fow9ci73xwdgeo5jp4tcnh516pn3z5zo.jpg">
+<div class="service-text">
+<h3>Электрик</h3>
+<ul>
+<li>Проводка и розетки</li>
+<li>Освещение и люстры</li>
+<li>Работы любой сложности</li>
+</ul>
+</div>
+</div>
+
+<div class="service-row">
+<img src="https://101course.ru/assets/images/santehnik2023_1.jpg">
+<div class="service-text">
+<h3>Сантехник</h3>
+<ul>
+<li>Смесители и трубы</li>
+<li>Устранение протечек</li>
+<li>Подключение техники</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Почему выбирают нас</h2>
+
+<div class="box">
+✔ Опыт более 5 лет<br><br>
+✔ Аккуратная и чистая работа<br><br>
+✔ Честные цены без доплат<br><br>
+✔ Быстрый выезд<br><br>
+✔ Работы любой сложности
+</div>
+
+<div class="box" style="border-color:#0ea5e9">
+<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="astana-icon"><br>
+<b>Работаем ТОЛЬКО в Астане</b><br><br>
+Хорошо знаем город и районы,<br>
+поэтому приезжаем быстрее и держим доступные цены.
+</div>
+</section>
+
+<section class="section">
+<h2>Отзывы клиентов</h2>
+<div id="reviewsBox"></div>
+
+<h3>Оставить отзыв</h3>
+<input id="rauthor" placeholder="Ваше имя">
+<textarea id="rtext" placeholder="Ваш отзыв"></textarea>
+<button onclick="addReview()">Отправить отзыв</button>
+</section>
+
+<section class="section" id="contact">
+<h2>Оставить заявку</h2>
+<form onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="Ваше имя" required>
+<input id="phone" placeholder="Телефон" required>
+<textarea id="task" placeholder="Опишите проблему"></textarea>
+<button>Отправить в WhatsApp</button>
+</form>
+
+<br><br>
+
+<div class="box">
+📞 <b>+7 (776) 116-68-40</b> — основной мастер<br><br>
+📞 <b>+7 (776) 126-96-91</b> — дополнительный мастер<br><br>
+📞 <b>+7 (777) 000-00-00</b> — если мастера временно не отвечают<br><br>
+<span style="color:#15803d">Мы обязательно перезвоним.</span>
+</div>
+</section>
+
+<footer class="footer">
+© 2025 Частный мастер · Астана
+</footer>
+
+</body>
+</html>
